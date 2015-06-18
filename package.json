@@ -1,0 +1,32 @@
+{
+  "name": "mini-mock-api",
+  "version": "0.0.1",
+  "description": "Lightweight node.js API mock server, route calls to static JSON files",
+  "main": "lib/mini-mock-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pwambach/mini-mock-api.git"
+  },
+  "keywords": [
+    "api",
+    "mock",
+    "lightweight",
+    "node",
+    "express",
+    "json"
+  ],
+  "author": "Philipp Wambach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pwambach/mini-mock-api/issues"
+  },
+  "homepage": "https://github.com/pwambach/mini-mock-api",
+  "devDependencies": {
+    "express": "^4.12.4",
+    "lodash-node": "^3.9.3",
+    "q": "^1.4.1"
+  }
+}
