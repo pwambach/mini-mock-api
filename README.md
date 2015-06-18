@@ -77,3 +77,6 @@ myApi.decorate = function(data){
 };
 ```
 
+## Can i use this in production?
+
+Hell no!
