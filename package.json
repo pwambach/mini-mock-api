@@ -24,7 +24,7 @@
     "url": "https://github.com/pwambach/mini-mock-api/issues"
   },
   "homepage": "https://github.com/pwambach/mini-mock-api",
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.12.4",
     "lodash-node": "^3.9.3",
     "q": "^1.4.1"
