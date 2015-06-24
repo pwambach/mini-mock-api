@@ -1,10 +1,10 @@
 var API = require('../lib/mini-mock-api');
 
 var server = new API({
-  BASE_PATH: '/api/v2',
-  PORT: 8080,
-  MOCK_FILE_PATH: 'mock-files',
-  ID_ATTRIBUTE: '_id'
+  basePath: '/api/v2',
+  port: 8080,
+  mockPath: 'mock-files',
+  idAttribute: '_id'
 });
 
 //wrap data in 'results' and add total amount
