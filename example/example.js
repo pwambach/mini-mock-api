@@ -18,4 +18,10 @@ server.decorate = function(data){
   return data;
 };
 
+//add custom post method
+server.post('custom', function(request, response){
+  response.json({status: 'okay'});
+});
+
+
 server.start();
