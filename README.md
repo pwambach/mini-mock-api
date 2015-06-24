@@ -25,9 +25,9 @@ with cars.json
 
 returns all cars inside cars.json
 
-`GET localhost:8080/cars/123`
+`GET localhost:8080/cars/1`
 
-returns one car with the id == 123
+returns one car with the id == 1
 
 `GET localhost:8080/oldschool/carriages`
 
@@ -43,7 +43,7 @@ returns all items from oldschool/carriages.json
 ```
 var API = require('mini-mock-api');
 var myApi = new API({
-  BASE_PATH: '/api/v1',
+  basePath: '/api/v1',
 });
 myApi.start();
 ```
@@ -53,11 +53,11 @@ see examples/example.js
 ## Options
 ```
 {
-  MOCK_FILE_PATH: 'mocks', //directory to mock files relative to path of script
-  BASE_PATH: '/api',  //base path for api calls -> localhost:8080/api/...
-  PORT: 8080,
-  ID_ATTRIBUTE: 'uuid', //the id property to search for when requesting api/cars/123
-  SORT_PARAMETER: 'sortOrder' //the GET parameter for sort orders e.g. api/cars?sortOrder=+name
+  mockPath: 'mocks', //directory to mock files relative to path of script
+  basePath: '/api',  //base path for api calls -> localhost:8080/api/...
+  port: 8080,
+  idAttribute: 'uuid', //the id property to search for when requesting api/cars/123
+  sortParameter: 'sortOrder' //the GET parameter for sort orders e.g. api/cars?sortOrder=+name
 }
 ```
 
