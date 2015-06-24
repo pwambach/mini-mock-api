@@ -44,11 +44,19 @@ returns all items from oldschool/carriages.json
 var API = require('mini-mock-api');
 var myApi = new API({
   basePath: '/api/v1',
+  mockPath: 'mock-files',
+  idAttribute: '_id'
 });
 myApi.start();
 ```
 
-see examples/example.js
+To run the server go to the script directory (path options are relative to your execution path):
+```
+cd examples
+node example.js
+```
+
+Open your browser and go to `localhost:8080/api/v1/todos`
 
 ## Options
 ```
