@@ -60,15 +60,35 @@ Open your browser and go to `localhost:8080/api/v1/todos`
 
 ## Options
 ```
-{
+var options = {
   mockPath: 'mocks', //directory to mock files relative to path of script
   basePath: '/api/v1',  //base path for api calls -> localhost:8080/api/v1/...
   port: 8080,
   idAttribute: 'uuid', //the id property to search for when requesting api/v1/cars/123
   sortParameter: 'sortOrder' //the GET parameter for sort orders e.g. api/v1/cars?sortOrder=+name
 }
+var myApi = new API(options);
 ```
 
+## Custom Routes
+
+If static JSON files are not sufficient you can also add custom routes by defining your own request handler functions. Custom routes are supported for GET, POST, PUT and DELETE methods:
+```
+myApi.post('custom/status', function(request, response){
+  response.json({status: 'okay'});
+});
+```
+
+`-> localhost:8080/api/v1/custom/status`
+
+Please note that custom routes are relativ to your 'basePath' property. If you need a route outside of your API scope use the '[get|post|put|delete]FromRoot' method: 
+```
+myApi.postFromRoot('/ping', function(request, response){
+  response.json({hello: 'there'});
+});
+```
+
+`-> localhost:8080/ping`
 ## Decorate
 
 All API responses can be decorated by defining a `decorate` function. In this example all returned collections are wrapped into `results` and a total count is added.
