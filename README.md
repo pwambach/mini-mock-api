@@ -21,15 +21,15 @@ with cars.json
 ]
 ```
 
-`GET localhost:8080/cars`
+`GET localhost:8080/api/v1/cars`
 
 returns all cars inside cars.json
 
-`GET localhost:8080/cars/1`
+`GET localhost:8080/api/v1/cars/1`
 
 returns one car with the id == 1
 
-`GET localhost:8080/oldschool/carriages`
+`GET localhost:8080/api/v1/oldschool/carriages`
 
 returns all items from oldschool/carriages.json
 
@@ -54,10 +54,10 @@ see examples/example.js
 ```
 {
   mockPath: 'mocks', //directory to mock files relative to path of script
-  basePath: '/api',  //base path for api calls -> localhost:8080/api/...
+  basePath: '/api/v1',  //base path for api calls -> localhost:8080/api/v1/...
   port: 8080,
-  idAttribute: 'uuid', //the id property to search for when requesting api/cars/123
-  sortParameter: 'sortOrder' //the GET parameter for sort orders e.g. api/cars?sortOrder=+name
+  idAttribute: 'uuid', //the id property to search for when requesting api/v1/cars/123
+  sortParameter: 'sortOrder' //the GET parameter for sort orders e.g. api/v1/cars?sortOrder=+name
 }
 ```
 

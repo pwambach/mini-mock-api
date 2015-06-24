@@ -1,7 +1,7 @@
 var API = require('../lib/mini-mock-api');
 
 var server = new API({
-  basePath: '/api/v2',
+  basePath: '/api/v1',
   port: 8080,
   mockPath: 'mock-files',
   idAttribute: '_id'
