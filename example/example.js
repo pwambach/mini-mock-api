@@ -18,10 +18,14 @@ server.decorate = function(data){
   return data;
 };
 
-//add custom post method
+//add custom post method localhost:8080/api/v1/custom
 server.post('custom', function(request, response){
   response.json({status: 'okay'});
 });
 
+//add custom post method localhost:8080/root
+server.postFromRoot('root', function(request, response){
+  response.json({status: 'okay'});
+});
 
 server.start();
