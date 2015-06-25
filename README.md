@@ -91,10 +91,10 @@ myApi.postFromRoot('/ping', function(request, response){
 `-> localhost:8080/ping`
 ## Decorate
 
-All API responses can be decorated by defining a `decorate` function. In this example all returned collections are wrapped into `results` and a total count is added.
+All API responses can be decorated by defining a `decorate` function. The functions also gets passed the request object as the second parameter. In this example all returned collections are wrapped into `results` and a total count is added.
 
 ```
-myApi.decorate = function(data){
+myApi.decorate = function(data, request){
   if(data.length){
     return {
       results: data,
