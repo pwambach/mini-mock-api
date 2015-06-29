@@ -65,6 +65,7 @@ var options = {
   basePath: '/api/v1',  //base path for api calls -> localhost:8080/api/v1/...
   port: 8080,
   idAttribute: 'uuid', //the id property to search for when requesting api/v1/cars/123
+  cors: false, //CORS headers for cross origin requests
   sortParameter: 'sortOrder' //the GET parameter for sort orders e.g. api/v1/cars?sortOrder=+name
 }
 var myApi = new API(options);

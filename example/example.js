@@ -4,7 +4,8 @@ var server = new API({
   basePath: '/api/v1',
   port: 8080,
   mockPath: 'mock-files',
-  idAttribute: '_id'
+  idAttribute: '_id',
+  cors: true
 });
 
 //wrap data in 'results' and add total amount
