@@ -1,6 +1,6 @@
 {
   "name": "mini-mock-api",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Lightweight node.js API mock server, route calls to static JSON files",
   "main": "lib/mini-mock-api.js",
   "scripts": {
