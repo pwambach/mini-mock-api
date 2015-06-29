@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/pwambach/mini-mock-api",
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.12.4",
     "lodash-node": "^3.9.3",
     "q": "^1.4.1"
