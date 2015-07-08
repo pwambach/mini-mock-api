@@ -4,7 +4,7 @@ Lightweight node.js API mock server, route calls to static JSON files
 ## What does it do?
 
 Mini-Mock-API was written to mock a simple API in a few minutes. API calls are routed to static JSON files.
-As an example if your mock directory looks like this: 
+As an example if your mock directory looks like this:
 ```
 + mock-files
   - cars.json
@@ -75,21 +75,22 @@ var myApi = new API(options);
 
 If static JSON files are not sufficient you can also add custom routes by defining your own request handler functions. Custom routes are supported for GET, POST, PUT and DELETE methods:
 ```
-myApi.post('custom/status', function(request, response){
+myApi.get('custom/status', function(request, response){
   response.json({status: 'okay'});
 });
 ```
 
 `-> localhost:8080/api/v1/custom/status`
 
-Please note that custom routes are relativ to your 'basePath' property. If you need a route outside of your API scope use the '[get|post|put|delete]FromRoot' method: 
+Please note that custom routes are relativ to your 'basePath' property. If you need a route outside of your API scope use the '[get|post|put|delete]FromRoot' method:
 ```
-myApi.postFromRoot('/ping', function(request, response){
+myApi.getFromRoot('/ping', function(request, response){
   response.json({hello: 'there'});
 });
 ```
 
 `-> localhost:8080/ping`
+
 ## Decorate
 
 All API responses can be decorated by defining a `decorate` function. The functions also gets passed the request object as the second parameter. In this example all returned collections are wrapped into `results` and a total count is added.
