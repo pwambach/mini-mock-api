@@ -1,4 +1,12 @@
-<a name="0.2.1"></a>
+<a name="0.2.2"></a>
+
+# 0.2.2 (2015-07-21)
+
+## Bug Fixes
+
+- log exception from decorate function ([8bcadce](https://github.com/pwambach/mini-mock-api/commit/8bcadce7f2ed63c88a27540e8ac34db4cdada9a4))
+
+
 # 0.2.1 (2015-06-29)
 
 ## Features
