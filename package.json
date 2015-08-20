@@ -1,6 +1,6 @@
 {
   "name": "mini-mock-api",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Lightweight node.js API mock server, route calls to static JSON files",
   "main": "lib/mini-mock-api.js",
   "scripts": {
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/pwambach/mini-mock-api",
   "dependencies": {
+    "connect-slow": "^0.2.2",
     "cors": "^2.7.1",
     "express": "^4.12.4",
     "lodash-node": "^3.9.3",

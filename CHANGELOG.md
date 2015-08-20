@@ -1,3 +1,13 @@
+<a name="0.2.3"></a>
+
+# 0.2.3 (2015-08-20)
+
+## Features
+
+- Add delay option using connect-slow ([9453110](https://github.com/pwambach/mini-mock-api/commit/9453110f1cde1064a220dcf2ac0d1b2828facdff))
+
+
+
 <a name="0.2.2"></a>
 
 # 0.2.2 (2015-07-21)
