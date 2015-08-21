@@ -67,7 +67,7 @@ var options = {
   idAttribute: 'uuid', //the id property to search for when requesting api/v1/cars/123
   cors: false, //CORS headers for cross origin requests
   sortParameter: 'sortOrder' //the GET parameter for sort orders e.g. api/v1/cars?sortOrder=+name
-  delay: true || {} //delays the request using [connect-slow](http://npmjs.com/package/connect-slow)
+  delay: true || {} //delays the request using connect-slow (http://npmjs.com/package/connect-slow)
 }
 var myApi = new API(options);
 ```
